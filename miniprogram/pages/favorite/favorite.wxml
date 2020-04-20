@@ -1,7 +1,0 @@
-<!--miniprogram/pages/favorite/favorite.wxml-->
-<text>miniprogram/pages/favorite/favorite.wxml</text>
-<button bindtap="insertButton_bindtap">insert data</button>
-<button bindtap="readButton_bindtap">read data</button>
-<view wx:for="{{ favorites }}" wx:for-index="favoriteIndex">
-  <view>{{ favorites[favoriteIndex].isFavorite }}</view>
-</view>
