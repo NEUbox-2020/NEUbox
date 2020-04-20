@@ -10,7 +10,7 @@
 		"enhance": true
 	},
 	"appid": "wx535495e87bede417",
-	"projectname": "MinaDatabase",
+	"projectname": "base",
 	"libVersion": "2.8.1",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
