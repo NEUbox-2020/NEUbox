@@ -1,0 +1,82 @@
+<!--pages/publish/publish.wxml-->
+<view class=goods_wrap">
+  <!-- 商品标题区域  -->
+  <view class="goods-title-wrap">
+    <!-- 标题输入框 -->
+    <input class="goods-title" placeholder="请输入商品标题" maxlength="40" 
+    placeholder-style="color:#b3b3b3;font-size:15rpx;" bindinput="handleTitleInput"></input>
+    <!-- 标题输入字数统计 -->
+    <view class="title-input-counter">{{titleCount}}/40</view>
+  </view>
+
+  <!-- 问题正文区域  -->
+  <view class="goods_info_wrap">
+    <view class="goods_info">
+        <!-- 多行输入框 -->
+        <textarea class="goods_info_textarea" placeholder="请输入商品描述信息" maxlength="500" 
+        placeholder-style="color:#b3b3b3;font-size:15rpx;" style="height: 12rem" bindinput="handleContentInput" />
+        <!-- 正文输入字数统计 -->
+        <view class="goods_info_textarea_counter">{{contentCount}}/500</view>
+    </view>
+   </view>
+</view>
+
+
+
+
+
+
+
+
+<text class='add_images'>上传图片</text>
+    <view class="goods-images clearFloat">
+      <block wx:for="{{images}}" wx:key="*this">
+        <view class="goods-image-wrap">
+          <!-- 图片缩略图  -->
+          <image class="goods-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+          <!-- 移除图片的按钮  -->
+          <view class="goods-image-remover" data-idx="{{index}}" bindtap="removeImage">
+            <icon class='iconfont icon-guanbi1'></icon>
+          </view>
+        </view>
+      </block>
+      <view class='uploadImgBtn' bindtap="chooseImage" wx:if="{{images.length < 6}}">
+        <icon class='iconfont icon-jiahao'></icon>
+      </view>
+    </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 价格栏 -->
+<view class="goods_price_wrap">
+   <view class="goods_price_info">
+       <icon class="iconfont icon-qian"></icon>
+       价格</view>
+    <input class="goods_price" placeholder="开个价吧^▽^"  
+    placeholder-style="color:#b3b3b3;font-size:15rpx;" bindinput="handlePriceInput"></input>
+   <!-- <input class="goods_price"  placeholder="开个价吧^▽^"  bindInput="handlePriceInput"></input> -->
+</view>
+
+
+<!-- 类型选择栏 -->
+<view class="type_choose_wrap">
+    <view class="type_choose_info">
+    <icon class="iconfont icon-huopinleixing-"></icon>
+    类型
+    </view>
+    <input class="type_choose"  placeholder="填写商品类型" 
+    placeholder-style="color:#b3b3b3;font-size:15rpx;" 
+    bindinput="handleTypeInput"></input>
+</view>
+
+<button class="goods_btn"  style="position:fixed;width:100%;bottom:0"  type="primary" bindtap="submitForm">发布</button>

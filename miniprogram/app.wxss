@@ -1,10 +1,59 @@
 /**app.wxss**/
+@import "./style/iconfont.wxss";
+
+
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* 定义主题颜色 */
+  --themeColor : #16C4AF;
+  font-size: 32rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
 } 
+image{
+  width: 100%;
+}
 
 button {
   background: initial;
@@ -16,14 +65,6 @@ button:focus{
 
 button::after{
   border: none;
-}
-
-
-page {
-  background: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 .userinfo, .uploader, .tunnel {

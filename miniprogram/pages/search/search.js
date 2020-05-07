@@ -1,4 +1,4 @@
-// miniprogram/pages/page2/page2.js
+// pages/search/search.js
 Page({
 
   /**
