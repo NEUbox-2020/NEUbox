@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/publish/publish",
+    "pages/unused/unused",
+    "pages/auth/auth",
+    "pages/chat/chat",
+    "pages/goods_list/goods_list",
+    "pages/index/index",
+    "pages/page3/page3",
+    "pages/goods_detail/goods_detail",
+    "pages/collect/collect",
+    "pages/order/order",
+    "pages/pay/pay",
+    "pages/category/category",
+    "pages/search/search"
+  ],
+  "tabBar": {
+    "list": [
+    {
+      "pagePath": "pages/unused/unused",
+      "text": "闲置",
+      "iconPath": "icon/good.png",
+      "selectedIconPath": "icon/good1.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "消息",
+      "iconPath": "icon/xiaoxi.png",
+      "selectedIconPath": "icon/xiaoxi1.png"
+    },
+    {
+      "pagePath": "pages/page3/page3",
+      "text": "我的",
+      "iconPath": "icon/wode.png",
+      "selectedIconPath": "icon/wode1.png"
+    }
+    ],
+    "color": "#999", 
+    "selectedColor": "#B8860B"  
+  },
+    "window": {
+      "backgroundColor": "#F6F6F6",
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#F6F6F6",
+      "navigationBarTitleText": "NEUBOX-0420",
+      "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

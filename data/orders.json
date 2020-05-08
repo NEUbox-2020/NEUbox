@@ -1,0 +1,13 @@
+{"_id":"b389c5465e9e92c0007292bf20648c8d",
+    "number":1.0,
+    "total_price":20.0,
+    "unit_price":20.0,
+    "state":{"comment":{"comment_or_not":true,"time":{"$date":"2020-04-21T08:02:26.028Z"}},
+    "delivery":{"delivery_or_not":true,
+    "time":{"$date":"2020-04-21T08:02:54.764Z"}},
+    "receive":{"receive_or_not":true,"time":{"$date":"2020-04-21T08:04:05.923Z"}},
+    "payment":{"payment_or_not":true,"time":{"$date":"2020-04-21T08:04:50.428Z"}}},
+    "create_time":{"$date":"2020-04-21T07:52:15.573Z"},
+    "buyer_id":"f8c2cf1e5e9e6f6d008fc1c74f3260fe",
+    "owner_id":"f8c2cf1e5e9e6f6d008fc1c74f3260fe",
+    "product_id":"17b0c7775e9e77160093412f02f8c20a"}

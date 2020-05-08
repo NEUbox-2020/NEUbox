@@ -1,0 +1,269 @@
+<!-- <!--miniprogram/pages/page2/page2.wxml
+1 text 相当于web中的span标签   行内元素不会换行
+2 view 块级元素会换行
+
+-->
+<!-- <text>1</text>
+<text>2222</text> -->
+
+<!-- 字符串 -->
+<!-- <view>{{msg}}</view>
+<view>{{num}}</view>
+<view>{{person.name}}</view>
+
+<view  data-num="{{num}}">自定义属性</view>
+复选框
+<view>
+<checkbox checked="{{isChecked}}"></checkbox>
+</view>
+
+
+<!-- 在花括号加表达式----“语句”
+数字运算 逻辑  字符串  三元
+
+语句：
+if else
+switch
+ -->
+ <!-- <view>{{1+1}}</view>
+ <view>{{'1'+'1'}}</view>
+ <view>{{10%2==0? '偶数'  :  '奇数'}}</view> -->
+
+ 
+<!-- <view>对象循环</view>
+<view  wx:for="{{person}}"
+wx:for-item="value"
+wx:for-index="key"
+wx:key="age"
+>
+属性:{{key}}
+--
+值:{{value}}
+</view> -->
+<!-- 需要给input标签 input事件  bindinput -->
+ <!-- <input type="text" bindinput="handleInput"></input>
+ <button bindtap="handletap" data-operation="{{1}}">+</button>
+ <button bindtap="handletap" data-operation="{{-1}}">-</button>
+<view >{{num}}</view> -->
+
+<!-- 
+  1.button 外观属性
+    size
+    plain
+    type
+
+ -->
+
+<!-- <button>默认按钮</button> -->
+<!-- 
+button的开发能力
+one-type
+contact
+share
+getPhoneNumber
+getUserInfo
+可以直接获取，不存在加密手段
+launchApp 
+在小程序中直接打开APP  需要在APP中通过APP的某个链接打开小程序
+openSetting
+授权页面只会出现用户曾经点击过的权限
+feenback
+打
+ -->
+ <!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">getUserInfo</button>
+
+<button open-type="openSetting" >openSettingo</button> -->
+
+<!-- 
+  icon
+    type
+       
+    size
+    color
+ -->
+
+ <!-- <icon   type="success" size="63" color="yellow"></icon> -->
+ <!-- 
+   radio 单选框
+
+  -->
+  <!-- <radio-group  bindchange="handleChange">
+   <radio value="male" color="red">男</radio>
+   <radio value="female">女</radio>
+  </radio-group>
+
+  <view>您选择的是：{{gender}}</view> -->
+
+  <!-- checkbox
+  
+   -->
+
+<!-- <Tabs tabs="{{tabs}}"  binditemChange="handleItemChange">
+   <block  wx:if='{{tabs[0].isActive}}'>0</block>
+  <block  wx:elif='{{tabs[1].isActive}}'>1</block>
+  <block  wx:elif='{{tabs[2].isActive}}'>2</block>
+  <block  wx:elif='{{tabs[3].isActive}}'>3</block>
+</Tabs>
+<view>首页
+ <text class="iconfont icon-yimaidaoshangpin"></ text>
+</view> -->
+
+<view class="pyg_index">
+<!-- 搜索框 开始-->
+  <searchInput></searchInput>
+<!-- 搜索框结束 -->
+<!-- 轮播图开始 -->
+<view class="index_swiper">
+  <swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+    <block wx:for="{{swiperList}}" wx:for-index="index">
+      <swiper-item>
+        <image src='{{item.image_src}}' class='u-img-slide' mode='widthFix'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+<!-- 轮播图结束 -->
+
+<!-- 导航开始 -->
+<view class="index_cate">
+  <navigator 
+  wx:for="{{catesList}}" 
+  wx:for-index="index"
+  url="{{item.url}}"
+  >
+    
+    <image src='{{item.image_src}}'  mode='widthFix'></image>
+  </navigator>
+</view>
+<!-- 导航结束-->
+
+<!-- 楼层开始 -->
+<view class="index_floor">
+  <view class="floor_group"
+  wx:for="{{floorList}}"
+  wx:for-item="item1"
+  wx:for-index="index1"
+  wx:key="floor_title"
+  
+  >
+    <!-- 标题 -->
+    <view class="floor_title">
+      <image mode="widthFix" src="{{item1.floor_title.image_src}}"></image>
+    </view>
+
+    <!-- 内容 -->
+    <view class="floor_list">
+        <navigator 
+        wx:for="{{item1.product_list}}"
+        wx:for-item="item2"
+        wx:for-index="index2"
+        wx:key="name"
+        >
+         <image src="{{item2.image_src}}" mode="{{index2===0?'widthFix':'scaleToFill'}}"> </image>
+        
+        </navigator>
+
+    </view>
+    
+</view>
+
+</view>
+
+<!-- 楼层结束 -->
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

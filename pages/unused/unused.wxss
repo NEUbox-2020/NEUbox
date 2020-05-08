@@ -1,0 +1,66 @@
+/* miniprogram/pages/page2/page2.wxss */
+.index_swiper swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+.index_swiper swiper image {
+  width: 100%;
+}
+.index_cate {
+  display: flex;
+}
+.index_cate navigator {
+  padding: 30rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.index_cate navigator text {
+  padding: 0 15rpx;
+}
+.index_cate navigator image {
+  width: 100%;
+}
+.floor_title {
+  display: flex;
+  padding: 20rpx;
+  border: 2rpx solid #ccc;
+  font-size: large;
+  font-weight: 700;
+  color: #6f767e;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content .floor_list {
+  width: 47%;
+  height: 380rpx;
+  margin: 5rpx;
+  /* 绝对定位的父级必须要定位 */
+  position: relative;
+  flex-direction: column;
+}
+.content .floor_list navigator image {
+  height: 250rpx;
+}
+.content .floor_list navigator .item_info {
+  height: 100rpx;
+  background: white;
+  font-size: 32rpx;
+}
+.content .floor_list navigator .item_info .item_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  height: 80rpx;
+}
+.content .floor_list navigator .item_info .item_price {
+  background: white;
+  color: var(--themeColor);
+  padding-top: 5rpx;
+}
