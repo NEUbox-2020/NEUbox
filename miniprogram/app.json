@@ -1,26 +1,45 @@
 {
   "pages": [
+    "pages/search_car/search_car",
+    "pages/search_lost/search_lost",
+   
+    "pages/search_wall_waiter/search_wall_waiter",
+    "pages/search_wall_love/search_wall_love",
+    "pages/search_products/search_products",    
     "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
-    "pages/openapi/openapi",
-    "pages/openapi/serverapi/serverapi",
-    "pages/openapi/callback/callback",
-    "pages/openapi/cloudid/cloudid",
-    "pages/im/im",
-    "pages/im/room/room"
+    "pages/page3/page3",
+    "pages/page2/page2"
+    
   ],
-  "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
-    "navigationBarTextStyle": "black"
+  "tabBar": {
+    "list": [
+    {
+      "pagePath": "pages/page2/page2",
+      "text": "闲鱼",
+      "iconPath": "icon/shop-N.png",
+      "selectedIconPath": "icon/shop.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "消息",
+      "iconPath": "icon/message-N.png",
+      "selectedIconPath": "icon/message.png"
+    },
+    {
+      "pagePath": "pages/page3/page3",
+      "text": "我的",
+      "iconPath": "icon/user-N.png",
+      "selectedIconPath": "icon/user.png"
+    }
+    ]
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+    "window": {
+      "backgroundColor": "#F6F6F6",
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#F6F6F6",
+      "navigationBarTitleText": "NEUBOX-0420",
+      "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
 }
