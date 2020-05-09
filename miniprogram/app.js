@@ -15,6 +15,11 @@ App({
       })
     }
 
-    this.globalData = {}
+    this.globalData = {
+      user_id:"",  //由后台返回的用户全部信息
+      userInfo:{}, //微信获取用户信息
+    }
+
+    
   }
 })

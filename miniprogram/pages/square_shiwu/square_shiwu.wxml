@@ -1,0 +1,42 @@
+<include src="/pages/up_menu/up_menu" />
+
+<scroll-view class="scbg" scroll-y="ture">
+  <view class="search">
+    <view class="search_input" bindtap="searchtap">
+      <input class="search_input2" placeholder='搜索失物招领信息' value='{{searchVal}}' bindconfirm="search" bindinput="input"></input>
+      <image class="search_clear"  wx:if="{{ searchVal != '' }}" catchtap="clear" src="../../icon/clear.png"></image>
+    </view>
+    <image class="search_image" src="../../icon/search.png" catchtap="search"></image>
+  </view>
+
+  <block wx:for="{{showData}}" wx:for-item="itemName" wx:for-index="id">
+    <view class="box">
+      <view class="firstblock">
+        <image class="touxiang" src="{{itemName.face_url}}"></image>
+        <view class="person">
+          <view class="name">
+            <text class="showname">{{itemName.username}}</text>
+          </view>
+          <view class="tel">
+            <text class="showtime">{{itemName.timestamp}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="secondblock">
+        <text class="content">{{itemName.message}}</text>
+      </view>
+     <view class="thirdblock">
+        <image class="like" src='/images/nice.png'></image>
+        <text class="num">{{itemName.total_likes}}</text>
+      </view>
+       <view class="container">
+        <!--  <button bindtap="bindReply">回复</button> -->
+        <view class="release">
+          <textarea class="text" placeholder-class="releaseInput" value="{{content}}" fixed="true" maxlength="120" show-confirm-bar="{{false}}" cursor-spacing="15" auto-height="true" focus="{{focus}}" placeholder="回复" value="{{content}}" bindinput="contentInput"></textarea>
+          <view class="submit" bindtap="comment">发送</view>
+        </view>
+      </view>
+    </view>
+
+  </block>
+</scroll-view>
