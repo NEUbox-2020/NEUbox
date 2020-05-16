@@ -1,0 +1,61 @@
+/* pages/order/order.wxss */
+/* pages/order/order.wxss */
+page {
+  padding-bottom: 90rpx;
+}
+.order_content .order_title {
+  padding: 20rpx;
+  font-size: 36rpx;
+  color: var(--themeColor);
+  border-top: 1rpx solid currentColor;
+  border-bottom: 1rpx solid currentColor;
+}
+.order_content .order_main .order_item {
+  display: flex;
+  border: 1rpx solid #ccc;
+}
+.order_content .order_main .order_item .order_img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order_content .order_main .order_item .order_info_warp {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.order_content .order_main .order_item .order_info_warp .order_info {
+  display: flex;
+  justify-content: space-between;
+}
+.order_content .order_main .order_item .order_info_warp .order_info .goods_name {
+  flex: 9;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #666;
+}
+.order_content .order_main .order_item .order_info_warp .order_info image {
+  flex: 2;
+}
+.order_content .order_main .order_item .order_info_warp .goods_price_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.order_content .order_main .order_item .order_info_warp .goods_price_wrap .goods_price {
+  color: var(--themeColor);
+  font-size: 34rpx;
+}
+.order_content .order_main .order_item .order_info_warp .goods_price_wrap .order_num_tool {
+  display: flex;
+}
+.order_content .order_main .order_item .order_info_warp .goods_price_wrap .order_num_tool .goods_num {
+  width: 80rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

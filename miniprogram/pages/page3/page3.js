@@ -1,12 +1,28 @@
 // miniprogram/pages/page3/page3.js
+var _app = getApp()
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
+    menuitems: [
+      { text: '个人资料', url: '/pages/information/information', icon: '/images/user/user1.png', tips: '', arrows: '/images/user/arrows.png' },
+      { text: '我的订单', url: '/pages/orders/orders', icon: '/images/user/user2.png', tips: '', arrows: '/images/user/arrows.png' },
+      { text: '我的交流', url: '/pages/my_square_biaobai/my_square_biaobai', icon: '/images/user/user3.png', tips: '', arrows: '/images/user/arrows.png' },
+      { text: '设置我的', url: '/pages/setinfo/setinfo', icon: '/images/user/user5.png', tips: '', arrows: '/images/user/arrows.png' },
+      /*{ text: '测试', url: '/pages/test/test', icon: '/images/user/user5.png', tips: '', arrows: '/images/user/arrows.png' },*/
+      { text: '退出登录', url: '#', icon: '/images/user/user4.png', tips: '', arrows: '/images/user/arrows.png' }
 
-  },
+    
+    ],
+
+   
+
+ 
+     
+      
+    
+  
 
   /**
    * 生命周期函数--监听页面加载
@@ -63,4 +79,9 @@ Page({
   onShareAppMessage: function () {
 
   }
+},
+toLogin(e){
+  wx.navigateTo({ url: '/pages/page4/page4' }) 
+}
+
 })

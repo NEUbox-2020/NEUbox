@@ -1,0 +1,102 @@
+page {
+  padding-bottom: 90rpx;
+}
+.goods_wrap .goods-title-wrap {
+  display: flex;
+  padding: 15rpx 0;
+}
+.goods_wrap .goods-title-wrap input.goods-title {
+  flex: 9;
+}
+.goods_wrap .goods-title-wrap .title-input-counter {
+  flex: 1;
+  color: #ccc;
+}
+.goods_wrap .goods_info_wrap {
+  border: 1rpx solid #ccc;
+}
+.goods_wrap .goods_info_wrap .goods_info .goods_info_textarea_counter {
+  text-align: right;
+  color: #ccc;
+}
+
+
+
+.add_images{
+  color: #ccc;
+}
+.goods-image-wrap{
+  width: 150rpx;
+  height: 150rpx;
+  border: 3px solid #f0f0f0;
+  float: left;
+  margin-right: 20rpx;
+  position: relative;
+  overflow: hidden;
+}
+.goods-image-remover{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+  background: #2e82ff;
+  position: absolute;
+  top:-50rpx;
+  right:-50rpx;
+
+}
+.goods-image-remover icon{
+  position: absolute;
+  left:12rpx;
+  bottom:12rpx;
+  color:#fff;
+}
+
+.uploadImgBtn{
+  width: 150rpx;
+  height: 150rpx;
+  text-align: center;
+  line-height: 140rpx;
+  border: 6rpx solid #f0f0f0;
+  float: left;
+}
+.uploadImgBtn icon{
+  font-size: 80rpx;
+  color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+.goods_price_wrap {
+  display: flex;
+  padding: 10rpx;
+  border: 1rpx solid #ccc;
+}
+.goods_price_wrap .goods_price_info {
+  flex: 2;
+  text-align: left;
+}
+.goods_price_wrap input.goods_price {
+  flex: 4;
+  text-align: right;
+}
+
+.type_choose_wrap {
+  display: flex;
+  padding: 10rpx;
+  border: 1rpx solid #ccc;
+}
+.type_choose_wrap .type_choose_info {
+  flex: 2;
+  text-align: left;
+}
+.type_choose_wrap input.type_choose {
+  flex: 4;
+  text-align: right;
+}
