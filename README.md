@@ -4,6 +4,8 @@
 
 小程序已经提交版本，正在官方审核中。审核通过后会在github仓库中更新小程序码。敬请体验与指正！ 项目交流请联系：sunxiaoxue113@foxmail.com
 
+小程序已生成体验版本。由于权限限制，如有体验需求，请联系邮箱，并附上体验者微信号即可。收到将尽快回复。
+
 [![YhjnsA.png](https://s1.ax1x.com/2020/05/18/YhjnsA.png)](https://imgchr.com/i/YhjnsA)
 
 [![YhjZxH.png](https://s1.ax1x.com/2020/05/18/YhjZxH.png)](https://imgchr.com/i/YhjZxH)
